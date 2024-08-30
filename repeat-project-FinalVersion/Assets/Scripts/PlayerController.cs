@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
         {
             displayManager.InitializeDisplay(lives, collectibleCount); // Passing only lives and collectibles
         }
-        
 
         // Get the AudioSource component
         playerAudio = GetComponent<AudioSource>();
@@ -45,7 +44,9 @@ public class PlayerController : MonoBehaviour
     {
         // Handle player movement (horizontal and jumping)
         float horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
+
+        // Invert the movement direction to correct left/right input
+        transform.Translate(transform.right * horizontalInput * speed * Time.deltaTime * -1); 
 
         if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(playerRb.velocity.y) < 0.01f)
         {
@@ -58,7 +59,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Check for boundries (X and Z only) - Always there
+        // Boundary check (X and Z only) - Always enforced
         Vector3 clampedPosition = transform.position;
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, boundaryMin.x, boundaryMax.x);
         clampedPosition.z = Mathf.Clamp(clampedPosition.z, boundaryMin.z, boundaryMax.z);
@@ -104,7 +105,8 @@ public class PlayerController : MonoBehaviour
             LoseLife();
         }
     }
-        // Decrease the number of lives and check if the player has any left, if not loads the "Looser" scene
+
+    // Decrease the number of lives and check if the player has any left, if not loads the "Looser" scene
     public void LoseLife()
     {
         lives--;
