@@ -10184,3 +10184,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/monoscript/fileName/ModelAssetProcessor.cs: 06b259f0833a06a252cbf16af5047dd5 -> 
   custom:scripting/monoscript/fileName/AnalyticsRuntimeLoggerExtension.cs: a1df2e708dfe0b8454f6045b6c97f535 -> 
   custom:scripting/monoscript/fileName/WebFrameHandler.cs: 1ada092eebf4ffed99d6a4e0c57bd8cc -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6905.330816 seconds.
+  path: Assets/Obstacle Pack/Scenes
+  artifactKey: Guid(9850237213159487fb0e4ffead4acac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Obstacle Pack/Scenes using Guid(9850237213159487fb0e4ffead4acac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef0a489e505b64dbff729b4e0bae522') in 0.012185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.712274 seconds.
+  path: Assets/PLAYER.prefab
+  artifactKey: Guid(6d70749e1ca2d431d9d8d8f0c444aa6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PLAYER.prefab using Guid(6d70749e1ca2d431d9d8d8f0c444aa6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f9e72abfaae0c0c3f09e2993103db6') in 0.101726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
