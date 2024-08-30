@@ -500,7 +500,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f00b5cb39c97459395c6183a6acfe80, type: 2}
+  - {fileID: 2100000, guid: 9c4d2e4145dad3f4785bb79c88089dcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2991,7 +2991,7 @@ MonoBehaviour:
   timeText: {fileID: 786780641}
   livesText: {fileID: 40041818}
   collectiblesText: {fileID: 152175897}
-  initialTime: 900000000
+  initialTime: 50
 --- !u!4 &1429953411
 Transform:
   m_ObjectHideFlags: 0
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   jumpForce: 8.5
   jumpSound: {fileID: 8300000, guid: cf3bb92485cae4af28dbfcde429a3e3d, type: 3}
   collectSound: {fileID: 8300000, guid: ac4e1f73f96ca4ae3ada10e0a83c4e91, type: 3}
-  lives: 900000000
+  lives: 3
   boundaryMin: {x: -10, y: 0, z: 0}
   boundaryMax: {x: 94.67384, y: 0, z: 0}
 --- !u!54 &2026239175
